@@ -1,0 +1,12 @@
+import math
+
+r = float(input())
+
+
+
+
+dien_tich= math.pi*r**2
+chu_vi = 2 *math.pi*r
+
+print(f"dien tich la: {dien_tich:.2f}")
+print(f"chu vi la: {chu_vi:.2f}")
