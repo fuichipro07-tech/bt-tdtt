@@ -1,0 +1,18 @@
+import math
+
+a,b,c = map(float,input().split(2))
+
+if(a+b>c) and (a+c>b)and (b+c>a):
+    if a == b == c:
+        loai = "tam giac deu"
+        
+    elif a == c or a==b or b==c:
+        if math.isclose(a*2 +b*2,c*2) or math.isclose(a*2 + c*2,b*2) or math.isclose(b*2 + c*2,a*2):
+            loai = "tam giac vuong can"
+        else:
+            loai = "tam giac can"
+    elif math.isclose(a*2 +b*2,c*2) or math.isclose(a*2 + c*2,b*2) or math.isclose(b*2 + c*2,a*2):
+            loai = "tam giac vuong"
+    else :
+            loai = "tam giac thuong"        
+print(loai)
